@@ -1,34 +1,19 @@
-@use "../utils/utils" as *;
+
 .logo {
   width: 152px;
 }
-
-.search {
-
-  +.offcanvas-top {
-    height: 160px;
+.offcanvas-body{
+  .dropdown-menu{
+    display:block;
   }
 }
-
-header {
- 
-    @include mobile {
-       .offcanvas-body {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      }
-      .user{
-        border:0;
-        color: #fff;
-        background-color: #0d6efd;
-        
-      }
-      .dropdown-menu{
-        width: 360px !important;
-        transform: translateY(20%) !important;
-      }
-    }
-    
-  
+@media(min-width:992px){
+  .offcanvas-body{
+  .dropdown-menu:not(.show){
+    display:none;
+  }
+}
+}
+.offcanvas{
+  backdrop-filter: blur(24px);
 }
