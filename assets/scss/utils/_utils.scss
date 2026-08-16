@@ -1,0 +1,11 @@
+.text-sm{
+   font-size: 14px;
+}
+.bgc-gray{
+   background-color: #212529;
+}
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
