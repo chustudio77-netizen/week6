@@ -1,98 +1,76 @@
-<header>
-    <nav class="navbar navbar-expand-lg py-3  py-lg-4">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg fixed-top bg-lg-transparent bg-dark py-3  py-lg-4 ">
+        <div class="container justify-content-start">
             <a class="navbar-brand" href="#"><img src="../assets/images/Logo.png" alt="logo" class="logo"></a>
-            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-           <i class="bi bi-list"></i>
-        </button> -->
-            <div class="nav-item dropdown  ms-auto me-2 d-block d-lg-none">
-                <button class="navbar-toggler border-0  " type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="bi bi-search  text-white"></i>
-                </button>
-                <div class=" dropdown-menu dropdown-menu-end  text-white p-3 w-100" aria-labelledby="navbarDropdown">
-                    <div class="input-group">
-                        <input type="search" class="form-control" placeholder="輸入工具名稱、功能或關鍵字">
-                        <button class="btn btn-outline-secondary" type="button">
-                            <i class="bi bi-search"></i>
-                        </button>
-                        <button class="btn " type="button">
-                            <i class="bi bi-x-lg"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="offcanvas offcanvas-end p-5 p-lg-0 bg-white bg-opacity-8 border-white border-opacity-12" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
+            <button class="btn d-lg-none text-white ms-auto me-1 p-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <i class="bi bi-search"></i>
+            </button>
+            <button class="navbar-toggler border-0 " type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <i class="bi bi-list  text-white"></i>
+            </button>
+
+            <div class="offcanvas offcanvas-end p-5 p-lg-0 bg-white bg-opacity-8 border-white border-opacity-12 flex-grow-0"
+                tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
                 <div class="offcanvas-header  p-0 mb-4">
-                    <button type="button" class="btn ms-auto p-2 text-white" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                    <button type="button" class="btn  p-2 text-white" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                            class="bi bi-x-lg"></i></button>
                 </div>
                 <div class=" offcanvas-body p-0">
-                    <div class="navbar-nav pe-3 ">
+                    <div class="navbar-nav d-flex flex-column justify-content-between h-100 pe-3 ">
                         <div class="nav-item dropdown ">
-                            <a class="nav-link text-white d-none d-lg-block" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link text-white d-none d-lg-block mx-2" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 探索 AI 工具<i class="bi bi-chevron-down ms-2"></i>
                             </a>
-                            <p class="h6 d-lg-none text-white p-3 mb-2 border-bottom border-white border-opacity-12">探索 AI 工具</p>
-                            <ul class="dropdown-menu  bg-transparent bg-lg-white bg-opacity-lg-8 border-lg-white border-lg-opacity-12">
-                                <li><a class="text-white p-2 mb-2 dropdown-item" href="#">內容生成</a></li>
-                                <li><a class="text-white p-2 mb-2 dropdown-item" href="#">視覺設計</a></li>
-                                <li><a class="text-white p-2 mb-2 dropdown-item" href="#">影像製作</a></li>
-                                <li><a class="text-white p-2 mb-2 dropdown-item" href="#">程式開發</a></li>
-                                <li><a class="text-white p-2 mb-2 dropdown-item" href="#">教育與學習</a></li>
-                                <li><a class="text-white p-2 mb-2 dropdown-item" href="#">資料分析</a></li>
-                                <li><a class="text-white p-2 mb-2 dropdown-item" href="#">生產力工具</a></li>
-                                <li><a class="text-white p-2  dropdown-item" href="#">音樂創作</a></li>
+                            <p class="h6 d-lg-none text-white p-3 mb-2  border-bottom border-lg-white">探索 AI 工具</p>
+                            <ul class="dropdown-menu p-2 bg-transparent bg-lg-white bg-opacity-lg-8 mt-4">
+                                <li><a class="text-white p-2 mb-2 dropdown-item rounded-1" href="#">內容生成</a></li>
+                                <li><a class="text-white p-2 mb-2 dropdown-item rounded-1" href="#">視覺設計</a></li>
+                                <li><a class="text-white p-2 mb-2 dropdown-item rounded-1" href="#">影像製作</a></li>
+                                <li><a class="text-white p-2 mb-2 dropdown-item rounded-1" href="#">程式開發</a></li>
+                                <li><a class="text-white p-2 mb-2 dropdown-item rounded-1" href="#">教育與學習</a></li>
+                                <li><a class="text-white p-2 mb-2 dropdown-item rounded-1" href="#">資料分析</a></li>
+                                <li><a class="text-white p-2 mb-2 dropdown-item rounded-1" href="#">生產力工具</a></li>
+                                <li><a class="text-white p-2  dropdown-item rounded-1" href="#">音樂創作</a></li>
                             </ul>
-                            <a class="user text-decoration-none bg-primary w-100 text-center d-lg-none  rounded-pill px-4 py-2  ">登入 / 註冊</a>
+
                         </div>
-                       
+                        <button type="button" class="user btn btn-primary  d-lg-none  rounded-pill px-4 py-2  ">登入
+                            / 註冊</button>
 
                     </div>
-                    <div class="input-group w-auto me-auto ">
-                        <input type="text" class="form-control d-none d-lg-block " placeholder="輸入工具名稱、功能或關鍵字"
+                    <!-- <div class=" me-auto position-relative d-none d-lg-block">
+                        <i
+                            class="bi bi-search position-absolute text-neutral-300 top-50 translate-middle-y search-icon"></i>
+                        <input type="text" class="form-control search-input-bar  rounded-1" placeholder="輸入工具名稱、功能或關鍵字"
                             aria-label="輸入工具名稱、功能或關鍵字" aria-describedby="button-addon2">
-                        <button class="btn bg-secondary-subtle border-secondary-subtle d-none d-lg-block" type="button"
-                            id="button-addon2"><i class="bi bi-search"></i></button>
-                    </div>
-                    <button type="button" class="user btn text-white d-none d-lg-block  rounded-pill px-4 py-2  ">登入 / 註冊</button>
-                </div>
-            </div>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-               <i class="bi bi-list  text-white"></i>
-            </button>
-            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="navbar-nav me-3 mb-2 mb-lg-0">
-                <div class="nav-item dropdown">
-                    <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        探索 AI 工具<i class="bi bi-chevron-down ms-2"></i>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">內容生成</a></li>
-                        <li><a class="dropdown-item" href="#">視覺設計</a></li>
-                        <li><a class="dropdown-item" href="#">影像製作</a></li>
-                        <li><a class="dropdown-item" href="#">程式開發</a></li>
-                        <li><a class="dropdown-item" href="#">教育與學習</a></li>
-                        <li><a class="dropdown-item" href="#">資料分析</a></li>
-                        <li><a class="dropdown-item" href="#">生產力工具</a></li>
-                        <li><a class="dropdown-item" href="#">音樂創作</a></li>
-                    </ul>
+
+                    </div> -->
+
                 </div>
 
             </div>
-            <div class="input-group w-auto me-auto">
-                <input type="text" class="form-control " placeholder="輸入工具名稱、功能或關鍵字" aria-label="輸入工具名稱、功能或關鍵字"
-                    aria-describedby="button-addon2">
-                <button class="btn bg-secondary-subtle border-secondary-subtle" type="button" id="button-addon2"><i
-                        class="bi bi-search"></i></button>
+            <div class="collapse  p-3 p-lg-0 d-lg-block  position-absolute top-100 start-0 end-0 position-lg-relative nabar-collapse-bar    " id="collapseExample">
+                <div class="d-flex gap-1 align-items-center">
+                    <div class="position-relative text-neutral-300   flex-grow-1">
+                        <i
+                            class="bi bi-search position-absolute  top-50 translate-middle-y search-icon"></i>
+                        <input type="text" class="form-control   search-input-bar rounded-1" placeholder="輸入工具名稱、功能或關鍵字"
+                            aria-label="輸入工具名稱、功能或關鍵字" aria-describedby="button-addon2">
+                    </div>
+                    <button class="btn d-lg-none text-white  p-2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <i class="bi bi-x-lg ms-1 p-2"></i>
+                    </button>
+                </div>
+
             </div>
-            <button type="button " class="btn btn-outline-primary rounded-pill px-4 py-2  "><i
-                    class="bi bi-person me-2"></i>會員中心</button>
-        </div> -->
+            <button type="button" class="user btn text-white d-none d-lg-block  rounded-pill px-4 py-2 ms-auto ">登入 /
+                註冊</button>
 
 
         </div>
+
     </nav>
-</header>

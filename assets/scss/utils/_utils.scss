@@ -5,6 +5,13 @@ $utilities: map-merge(
     map-get($utilities, "background-color"),
     ( responsive: true )
   ),
+  "border":
+      map-merge(
+        map-get($utilities, "border"),
+        (
+          responsive: true,
+        )
+      ),
     "font-size":
       map-merge(
         map-get($utilities, "font-size"),
